@@ -1,0 +1,13 @@
+{
+  "name": "Имя Фамилия — врач-психиатр, психотерапевт",
+  "short_name": "Имя Фамилия",
+  "lang": "ru",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F8F5EF",
+  "theme_color": "#F8F5EF",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/assets/img/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ]
+}

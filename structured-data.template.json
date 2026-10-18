@@ -1,0 +1,26 @@
+{
+  "_comment": "Шаблон schema.org. Заполните ТОЛЬКО подтверждёнными сведениями, удалите неиспользуемые поля и этот комментарий, затем вставьте в <head> index.html внутри <script type=\"application/ld+json\">…</script>.",
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Имя Отчество Фамилия",
+  "medicalSpecialty": ["Psychiatric"],
+  "url": "https://example.com/",
+  "image": "https://example.com/assets/img/portrait-960.jpg",
+  "telephone": "+70000000000",
+  "email": "hello@example.com",
+  "priceRange": "0000–0000 RUB",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "улица, дом, помещение",
+    "addressLocality": "Город",
+    "postalCode": "000000",
+    "addressCountry": "RU"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "20:00" }
+  ],
+  "availableService": [
+    { "@type": "MedicalTherapy", "name": "Первичная консультация психиатра" },
+    { "@type": "MedicalTherapy", "name": "Психотерапевтическая сессия" }
+  ]
+}

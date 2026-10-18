@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" width="960" height="1200" role="img" aria-label="Место для фотографии специалиста">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#EDE5D7"/>
+      <stop offset="1" stop-color="#DCD3C1"/>
+    </linearGradient>
+    <radialGradient id="l" cx="0.3" cy="0.2" r="0.8">
+      <stop offset="0" stop-color="#FFFDF9" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FFFDF9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#g)"/>
+  <rect width="960" height="1200" fill="url(#l)"/>
+  <!-- ветвь оливы, тонкая линия -->
+  <g fill="none" stroke="#2E4A3F" stroke-width="2" stroke-linecap="round" opacity=".55">
+    <path d="M300 1020 C 420 860, 520 700, 640 420"/>
+    <path d="M372 902 c -60 -10 -110 -50 -130 -100 c 60 0 110 40 130 100z"/>
+    <path d="M410 840 c 50 -30 110 -30 160 0 c -50 30 -110 30 -160 0z"/>
+    <path d="M462 754 c -60 -20 -100 -70 -110 -120 c 60 10 100 60 110 120z"/>
+    <path d="M500 690 c 40 -40 100 -50 150 -30 c -40 40 -100 50 -150 30z"/>
+    <path d="M556 590 c -50 -30 -80 -80 -80 -130 c 50 20 80 70 80 130z"/>
+    <path d="M590 524 c 40 -40 90 -55 140 -45 c -35 40 -90 55 -140 45z"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle" fill="#464D49">
+    <text x="480" y="1110" font-size="30" font-style="italic">Фото специалиста</text>
+    <text x="480" y="1150" font-size="18" font-family="Arial, sans-serif" letter-spacing="4" fill="#636A65">PLACEHOLDER</text>
+  </g>
+</svg>

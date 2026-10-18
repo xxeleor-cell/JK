@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# PLACEHOLDER: замените домен
+Sitemap: https://example.com/sitemap.xml

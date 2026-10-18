@@ -1,0 +1,848 @@
+<!doctype html>
+<!--
+  Сайт-визитка врача-психиатра, психотерапевта.
+  Все неподтверждённые сведения размечены классом .ph и комментарием PLACEHOLDER.
+  Перед публикацией: заполните поля (см. README.md → «Чек-лист перед запуском»)
+  и удалите атрибут data-placeholders у <html>, чтобы убрать подсветку.
+-->
+<html lang="ru" data-placeholders="show">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PLACEHOLDER: имя врача и город -->
+  <title>Имя Фамилия — врач-психиатр, психотерапевт · Город и онлайн</title>
+  <meta name="description" content="Частный приём врача-психиатра и психотерапевта: тревога, сниженное настроение, стресс, нарушения сна. Очно в городе и онлайн. Конфиденциально, без осуждения. Цены и запись на сайте.">
+  <meta name="theme-color" content="#F8F5EF">
+  <meta name="format-detection" content="telephone=no">
+  <!-- PLACEHOLDER: замените https://example.com на реальный домен во всех файлах -->
+  <link rel="canonical" href="https://example.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Имя Фамилия — врач-психиатр, психотерапевт">
+  <meta property="og:title" content="Имя Фамилия — врач-психиатр, психотерапевт">
+  <meta property="og:description" content="Бережная профессиональная помощь взрослым. Очно и онлайн. Конфиденциально. Цены и запись на сайте.">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Имя Фамилия — врач-психиатр, психотерапевт">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Шрифты. Для полного соответствия 152-ФЗ рекомендуем разместить их локально (см. README). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="assets/img/portrait-placeholder.svg" fetchpriority="high">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+
+  <!--
+    Структурированные данные (schema.org) намеренно не подключены:
+    публикуйте их только после подтверждения сведений. Шаблон — structured-data.template.json.
+  -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- Плашка режима наполнения. Удалите этот блок перед публикацией. -->
+  <div class="ph-banner" role="note">
+    Демонстрационная версия: подсвеченные поля — <b>PLACEHOLDER</b>, их нужно заменить реальными данными.
+  </div>
+
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1"/><path d="M16 7c-4 5-4 13 0 18M16 7c4 5 4 13 0 18" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name"><span class="ph">Имя Фамилия</span></span>
+          <span class="brand__role">психиатр · психотерапевт</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Основная навигация" data-nav>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">О специалисте</a></li>
+          <li><a class="nav__link" href="#help">С чем обратиться</a></li>
+          <li><a class="nav__link" href="#process">Как проходит приём</a></li>
+          <li><a class="nav__link" href="#prices">Стоимость</a></li>
+          <li><a class="nav__link" href="#faq">Вопросы</a></li>
+          <li><a class="nav__link" href="#contact">Контакты</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary btn--block" href="#contact">Записаться на консультацию</a>
+          <!-- PLACEHOLDER: телефон -->
+          <a class="nav__phone" href="tel:+70000000000"><span class="ph">+7 (000) 000-00-00</span></a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary btn--sm header__cta" href="#contact">Записаться</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" data-burger>
+          <span class="visually-hidden" data-burger-label>Открыть меню</span>
+          <span class="burger__lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 1. ПЕРВЫЙ ЭКРАН ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            <span class="eyebrow hero__role">Врач-психиатр, психотерапевт</span>
+            <!-- PLACEHOLDER: имя, отчество, фамилия -->
+            <span class="hero__name"><span class="ph">Имя Отчество<br> Фамилия</span></span>
+          </h1>
+          <p class="hero__lead">
+            Помогаю взрослым разобраться в&nbsp;том, что происходит с&nbsp;настроением, сном и&nbsp;уровнем тревоги,
+            и&nbsp;вместе выбрать подходящий способ помощи — спокойно, конфиденциально и&nbsp;без осуждения.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contact">Записаться на консультацию</a>
+            <a class="link-arrow" href="#about">О специалисте <span aria-hidden="true">→</span></a>
+          </div>
+          <!-- PLACEHOLDER: оставьте только подтверждённые форматы приёма -->
+          <ul class="hero__facts" aria-label="Форматы приёма">
+            <li>
+              <span class="hero__fact-label">Очно</span>
+              <span class="hero__fact-value"><span class="ph">Город, район / метро</span></span>
+            </li>
+            <li>
+              <span class="hero__fact-label">Онлайн</span>
+              <span class="hero__fact-value">видеосвязь, <span class="ph">из любого региона</span></span>
+            </li>
+            <li>
+              <span class="hero__fact-label">Первичный приём</span>
+              <span class="hero__fact-value"><a href="#prices"><span class="ph">0 000 ₽</span>, <span class="ph">00 мин</span></a></span>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="hero__media">
+          <div class="hero__photo">
+            <!--
+              PLACEHOLDER: фото специалиста.
+              Замена: положите portrait.avif / portrait.webp / portrait.jpg (≈ 960×1200) в assets/img/
+              и раскомментируйте <source>. Подробнее — README.
+            -->
+            <picture>
+              <!-- <source type="image/avif" srcset="assets/img/portrait-640.avif 640w, assets/img/portrait-960.avif 960w" sizes="(min-width: 900px) 40vw, 90vw"> -->
+              <!-- <source type="image/webp" srcset="assets/img/portrait-640.webp 640w, assets/img/portrait-960.webp 960w" sizes="(min-width: 900px) 40vw, 90vw"> -->
+              <img src="assets/img/portrait-placeholder.svg" width="960" height="1200"
+                   alt="Место для фотографии специалиста (временное изображение)"
+                   fetchpriority="high" decoding="async">
+            </picture>
+          </div>
+          <figcaption class="hero__caption">
+            <span class="hero__caption-line" aria-hidden="true"></span>
+            Приём взрослых <span class="ph">18+</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <ul class="trust-row" aria-label="Принципы работы">
+          <li><span class="trust-row__dot" aria-hidden="true"></span>Врачебная тайна</li>
+          <li><span class="trust-row__dot" aria-hidden="true"></span>Без осуждения и давления</li>
+          <li><span class="trust-row__dot" aria-hidden="true"></span>Решения — совместно</li>
+          <li><span class="trust-row__dot" aria-hidden="true"></span>Открытые цены</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 2. О СПЕЦИАЛИСТЕ ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <header class="section-head about__head">
+          <p class="eyebrow"><span class="eyebrow__num">01</span>О специалисте</p>
+          <h2 class="section-title" id="about-title">Врач, который сначала <em>слушает</em></h2>
+        </header>
+
+        <div class="about__body">
+          <div class="about__bio prose" data-reveal>
+            <!-- PLACEHOLDER: профессиональная биография от первого лица или в третьем лице. 2–4 абзаца. -->
+            <p class="lead">
+              <span class="ph">Меня зовут Имя Отчество. Я врач-психиатр и психотерапевт. Здесь — 2–3 предложения о том, с кем вы работаете и почему выбрали эту специальность.</span>
+            </p>
+            <p>
+              <span class="ph">Абзац о профессиональном пути: где учились, где работали, какой опыт сейчас наиболее важен для пациентов. Только подтверждённые факты — без общих рекламных формулировок.</span>
+            </p>
+            <p>
+              <span class="ph">Абзац о том, как устроена работа: сочетание медицинской оценки и психотерапии, внимание к образу жизни, сотрудничество с другими специалистами при необходимости.</span>
+            </p>
+          </div>
+
+          <dl class="facts" data-reveal>
+            <div class="facts__row">
+              <dt>Образование</dt>
+              <dd><span class="ph">Название вуза, факультет, год окончания</span></dd>
+            </div>
+            <div class="facts__row">
+              <dt>Специализация</dt>
+              <dd><span class="ph">Ординатура / переподготовка по психиатрии, психотерапии — учреждение, год</span></dd>
+            </div>
+            <div class="facts__row">
+              <dt>Аккредитация</dt>
+              <dd><span class="ph">Специальности и сроки действия свидетельства об аккредитации</span></dd>
+            </div>
+            <div class="facts__row">
+              <dt>Опыт</dt>
+              <dd><span class="ph">Места работы и годы — только подтверждённые</span></dd>
+            </div>
+            <div class="facts__row">
+              <dt>Методы</dt>
+              <dd><span class="ph">Методы, которыми врач владеет и в которых обучен</span> · <a href="#approach">подробнее</a></dd>
+            </div>
+            <div class="facts__row">
+              <dt>Сообщества</dt>
+              <dd><span class="ph">Профессиональные ассоциации — если есть</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- PLACEHOLDER: профессиональный путь (хронология). Добавляйте/удаляйте <li> по образцу. -->
+        <div class="timeline-wrap" data-reveal>
+          <h3 class="h3">Профессиональный путь</h3>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <span class="timeline__year"><span class="ph">20XX — н. в.</span></span>
+              <span class="timeline__text"><span class="ph">Частная практика: психиатрия и психотерапия</span></span>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year"><span class="ph">20XX — 20XX</span></span>
+              <span class="timeline__text"><span class="ph">Должность, медицинская организация</span></span>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year"><span class="ph">20XX — 20XX</span></span>
+              <span class="timeline__text"><span class="ph">Ординатура по специальности «Психиатрия», учреждение</span></span>
+            </li>
+          </ol>
+          <a class="link-arrow" href="#education">Дипломы и сертификаты <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. С ЧЕМ МОЖНО ОБРАТИТЬСЯ ============ -->
+    <section class="section section--alt" id="help" aria-labelledby="help-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">02</span>С чем можно обратиться</p>
+            <h2 class="section-title" id="help-title">Когда стоит <em>поговорить</em> со&nbsp;специалистом</h2>
+          </div>
+          <p class="section-intro">
+            Не обязательно знать, «как это называется». Достаточно замечать, что состояние мешает жить так, как хочется.
+            Ниже — частые поводы для обращения; это не диагнозы и не самодиагностика.
+          </p>
+        </header>
+
+        <!-- PLACEHOLDER: список направлений нужно подтвердить у врача. Карточки добавляются/удаляются по образцу. -->
+        <ul class="cards cards--help" role="list">
+          <li class="card card--help" data-reveal>
+            <span class="card__index">01</span>
+            <h3 class="card__title">Тревога и беспокойство</h3>
+            <p>Постоянное напряжение, тревожные мысли, которые сложно остановить, телесные ощущения тревоги.</p>
+          </li>
+          <li class="card card--help" data-reveal>
+            <span class="card__index">02</span>
+            <h3 class="card__title">Сниженное настроение</h3>
+            <p>Когда долго нет сил и интереса, привычные дела даются с трудом, а радость будто приглушена.</p>
+          </li>
+          <li class="card card--help" data-reveal>
+            <span class="card__index">03</span>
+            <h3 class="card__title">Стресс и истощение</h3>
+            <p>Усталость, которая не проходит после отдыха, раздражительность, ощущение, что ресурс закончился.</p>
+          </li>
+          <li class="card card--help" data-reveal>
+            <span class="card__index">04</span>
+            <h3 class="card__title">Нарушения сна</h3>
+            <p>Трудно уснуть, частые пробуждения, ранние подъёмы или сон, после которого нет ощущения отдыха.</p>
+          </li>
+          <li class="card card--help" data-reveal>
+            <span class="card__index">05</span>
+            <h3 class="card__title">Жизненные перемены</h3>
+            <p>Переезд, развод, утрата, смена работы, рождение ребёнка — периоды, когда привычные опоры не работают.</p>
+          </li>
+          <li class="card card--help" data-reveal>
+            <span class="card__index">06</span>
+            <h3 class="card__title">Приступы паники</h3>
+            <p>Внезапные эпизоды сильного страха с сердцебиением, нехваткой воздуха, ощущением потери контроля.</p>
+          </li>
+          <li class="card card--help" data-reveal>
+            <span class="card__index">07</span>
+            <h3 class="card__title">Навязчивые мысли и действия</h3>
+            <p>Повторяющиеся мысли или ритуалы, от которых трудно отказаться, даже когда понимаешь их избыточность.</p>
+          </li>
+          <li class="card card--help" data-reveal>
+            <span class="card__index">08</span>
+            <h3 class="card__title">Второе мнение и сопровождение лечения</h3>
+            <p>Обсуждение уже назначенной терапии, вопросов о препаратах и дальнейшего плана помощи.</p>
+          </li>
+        </ul>
+
+        <!-- Блок для сомневающихся -->
+        <div class="unsure" id="unsure" data-reveal>
+          <div class="unsure__col">
+            <h3 class="h3">Если вы сомневаетесь, нужно ли обращаться</h3>
+            <p>
+              Поводом для консультации может быть не только «серьёзная проблема». Обратиться имеет смысл, если состояние
+              длится неделями, влияет на работу, сон, отношения или вы просто хотите понять, что с вами происходит.
+              Первая встреча ни к чему не обязывает: её задача — разобраться в ситуации и обсудить варианты.
+            </p>
+          </div>
+          <div class="unsure__col">
+            <h3 class="h3">Психиатр, психотерапевт, психолог — в чём разница</h3>
+            <dl class="compare">
+              <div><dt>Психиатр</dt><dd>врач: проводит медицинскую оценку состояния, при необходимости может назначить лечение, в том числе лекарственное.</dd></div>
+              <div><dt>Психотерапевт</dt><dd>в России — врач-психиатр с дополнительной подготовкой, который проводит психотерапию.</dd></div>
+              <div><dt>Психолог</dt><dd>специалист с психологическим образованием, не врач; не ставит диагнозы и не назначает препараты.</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. ФОРМАТЫ КОНСУЛЬТАЦИЙ ============ -->
+    <section class="section" id="formats" aria-labelledby="formats-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">03</span>Форматы консультаций</p>
+            <h2 class="section-title" id="formats-title">Выберите <em>удобный</em> формат</h2>
+          </div>
+          <p class="section-intro">
+            Если не уверены, с чего начать, — начните с первичной консультации. Дальнейший формат вы определите вместе с врачом.
+          </p>
+        </header>
+
+        <!-- PLACEHOLDER: длительность, стоимость и доступность форматов. Удалите карточки недоступных форматов. -->
+        <ul class="cards cards--formats" role="list">
+          <li class="card card--format" data-reveal>
+            <h3 class="card__title">Первичная консультация</h3>
+            <p>Знакомство, подробный разговор о вашем запросе и состоянии, обсуждение возможных вариантов помощи.</p>
+            <dl class="card__meta">
+              <div><dt>Длительность</dt><dd><span class="ph">00 мин</span></dd></div>
+              <div><dt>Формат</dt><dd><span class="ph">очно / онлайн</span></dd></div>
+              <div><dt>Стоимость</dt><dd class="card__price"><span class="ph">0 000 ₽</span></dd></div>
+            </dl>
+          </li>
+          <li class="card card--format" data-reveal>
+            <h3 class="card__title">Повторная консультация</h3>
+            <p>Обсуждение изменений, оценка того, что помогает, при необходимости — корректировка плана.</p>
+            <dl class="card__meta">
+              <div><dt>Длительность</dt><dd><span class="ph">00 мин</span></dd></div>
+              <div><dt>Формат</dt><dd><span class="ph">очно / онлайн</span></dd></div>
+              <div><dt>Стоимость</dt><dd class="card__price"><span class="ph">0 000 ₽</span></dd></div>
+            </dl>
+          </li>
+          <li class="card card--format" data-reveal>
+            <h3 class="card__title">Психотерапевтическая сессия</h3>
+            <p>Регулярные встречи для работы с запросом. Частота и продолжительность курса обсуждаются индивидуально.</p>
+            <dl class="card__meta">
+              <div><dt>Длительность</dt><dd><span class="ph">00 мин</span></dd></div>
+              <div><dt>Формат</dt><dd><span class="ph">очно / онлайн</span></dd></div>
+              <div><dt>Стоимость</dt><dd class="card__price"><span class="ph">0 000 ₽</span></dd></div>
+            </dl>
+          </li>
+          <li class="card card--format" data-reveal>
+            <h3 class="card__title">Онлайн-консультация</h3>
+            <p>Встреча по видеосвязи из спокойного места, где вас не услышат. Подходит, если очный приём неудобен.</p>
+            <dl class="card__meta">
+              <div><dt>Длительность</dt><dd><span class="ph">00 мин</span></dd></div>
+              <div><dt>Платформа</dt><dd><span class="ph">Zoom / Telegram / др.</span></dd></div>
+              <div><dt>Стоимость</dt><dd class="card__price"><span class="ph">0 000 ₽</span></dd></div>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 5. КАК ПРОХОДИТ ПРИЁМ ============ -->
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">04</span>Как проходит приём</p>
+            <h2 class="section-title" id="process-title">Пять простых <em>шагов</em></h2>
+          </div>
+          <p class="section-intro">
+            У каждого человека свой путь: количество встреч и дальнейшие шаги зависят от ситуации и всегда обсуждаются вместе.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3 class="step__title">Вы выбираете способ связи</h3>
+            <p>Телефон, мессенджер или почта — как вам спокойнее. Описывать симптомы в сообщении не нужно.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3 class="step__title">Согласуем дату и время</h3>
+            <p>Подбираем удобный слот и формат — очно или онлайн.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3 class="step__title">Вы получаете детали встречи</h3>
+            <p>Адрес или ссылку на видеосвязь, стоимость и что можно взять с собой.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num" aria-hidden="true">4</span>
+            <h3 class="step__title">Разговор с врачом</h3>
+            <p>Вы рассказываете о своём запросе в своём темпе. Можно говорить о том, о чём готовы.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num" aria-hidden="true">5</span>
+            <h3 class="step__title">Вместе определяем шаги</h3>
+            <p>Обсуждаем варианты помощи, их плюсы и ограничения. Решение остаётся за вами.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 6. ПОДХОД К РАБОТЕ ============ -->
+    <section class="section section--dark" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">05</span>Подход к работе</p>
+            <h2 class="section-title" id="approach-title">Принципы, на которых <em>строится</em> работа</h2>
+          </div>
+          <p class="section-intro">
+            Первая встреча ни к чему не обязывает. Её задача — разобраться, что происходит, и вместе решить, что может помочь.
+          </p>
+        </header>
+
+        <!-- PLACEHOLDER: формулировки принципов — согласуйте с врачом -->
+        <ul class="principles" role="list">
+          <li class="principle" data-reveal>
+            <h3 class="principle__title">Уважение и отсутствие осуждения</h3>
+            <p>О любых переживаниях можно говорить прямо. Здесь не стыдят, не обесценивают и не торопят.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <h3 class="principle__title">Совместные решения</h3>
+            <p>Варианты помощи обсуждаются открыто: что предлагается, зачем, какие есть альтернативы. Последнее слово — за вами.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <h3 class="principle__title">Внимание к вашей ситуации</h3>
+            <p>Нет универсальных схем. Учитываются образ жизни, ваш опыт, предпочтения и то, что уже пробовали.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <h3 class="principle__title">Конфиденциальность</h3>
+            <p>Всё, что вы рассказываете, составляет врачебную тайну и защищено законом.</p>
+          </li>
+        </ul>
+
+        <div class="methods" data-reveal>
+          <h3 class="h3">Методы работы</h3>
+          <!-- PLACEHOLDER: укажите только методы, в которых врач прошёл подготовку. Ниже — примеры. -->
+          <ul class="chips" role="list">
+            <li class="chip"><span class="ph">Метод 1 — например, КПТ</span></li>
+            <li class="chip"><span class="ph">Метод 2</span></li>
+            <li class="chip"><span class="ph">Метод 3</span></li>
+            <li class="chip">Фармакотерапия <span class="ph">— при показаниях</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. ОБРАЗОВАНИЕ И КВАЛИФИКАЦИЯ ============ -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">06</span>Образование и квалификация</p>
+            <h2 class="section-title" id="education-title">Документы <em>об образовании</em></h2>
+          </div>
+          <p class="section-intro">
+            Дипломы, сертификаты и удостоверения о повышении квалификации. Нажмите на документ, чтобы открыть скан.
+          </p>
+        </header>
+
+        <!--
+          Как добавить документ: скопируйте <li class="doc">…</li>,
+          положите скан в assets/docs/ (JPG/WebP, ширина ≈1600 px) и укажите путь в href и data-doc.
+          Пример со сканом:
+          <li class="doc">
+            <a class="doc__link" href="assets/docs/diploma.webp" data-doc data-doc-title="Диплом о высшем образовании">
+              <span class="doc__type">Диплом</span>
+              <span class="doc__title">Лечебное дело</span>
+              <span class="doc__meta">Название вуза · 20XX</span>
+              <span class="doc__open">Открыть скан</span>
+            </a>
+          </li>
+        -->
+        <ul class="docs" role="list">
+          <li class="doc" data-reveal>
+            <div class="doc__link">
+              <span class="doc__type">Диплом</span>
+              <span class="doc__title"><span class="ph">Специальность «Лечебное дело»</span></span>
+              <span class="doc__meta"><span class="ph">Название вуза · 20XX</span></span>
+            </div>
+          </li>
+          <li class="doc" data-reveal>
+            <div class="doc__link">
+              <span class="doc__type">Ординатура</span>
+              <span class="doc__title"><span class="ph">Психиатрия</span></span>
+              <span class="doc__meta"><span class="ph">Учреждение · 20XX</span></span>
+            </div>
+          </li>
+          <li class="doc" data-reveal>
+            <div class="doc__link">
+              <span class="doc__type">Переподготовка</span>
+              <span class="doc__title"><span class="ph">Психотерапия</span></span>
+              <span class="doc__meta"><span class="ph">Учреждение · 20XX</span></span>
+            </div>
+          </li>
+          <li class="doc" data-reveal>
+            <div class="doc__link">
+              <span class="doc__type">Аккредитация</span>
+              <span class="doc__title"><span class="ph">Свидетельство об аккредитации</span></span>
+              <span class="doc__meta"><span class="ph">Действует до 20XX</span></span>
+            </div>
+          </li>
+          <li class="doc" data-reveal>
+            <div class="doc__link">
+              <span class="doc__type">Повышение квалификации</span>
+              <span class="doc__title"><span class="ph">Название программы</span></span>
+              <span class="doc__meta"><span class="ph">Организация · 20XX · 00 ч</span></span>
+            </div>
+          </li>
+          <li class="doc" data-reveal>
+            <div class="doc__link">
+              <span class="doc__type">Сертификат</span>
+              <span class="doc__title"><span class="ph">Название программы</span></span>
+              <span class="doc__meta"><span class="ph">Организация · 20XX</span></span>
+            </div>
+          </li>
+        </ul>
+        <p class="note">
+          Сведения о свидетельстве об аккредитации специалиста можно проверить в открытом реестре Минздрава России.
+          <!-- PLACEHOLDER: при желании добавьте ссылку на запись в реестре -->
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 8. СТОИМОСТЬ ============ -->
+    <section class="section section--alt" id="prices" aria-labelledby="prices-title">
+      <div class="container prices">
+        <header class="section-head prices__head">
+          <p class="eyebrow"><span class="eyebrow__num">07</span>Стоимость</p>
+          <h2 class="section-title" id="prices-title">Цены <em>без мелкого шрифта</em></h2>
+          <p class="section-intro">
+            Стоимость фиксирована и известна заранее. <span class="ph">Оплата — после приёма.</span>
+            <span class="ph">Способы оплаты: наличные, карта, перевод.</span>
+          </p>
+          <a class="btn btn--primary" href="#contact">Записаться на консультацию</a>
+        </header>
+
+        <div class="price-table-wrap" data-reveal>
+          <!-- PLACEHOLDER: стоимость и длительность. Строки добавляются по образцу <tr>. -->
+          <table class="price-table">
+            <caption class="visually-hidden">Стоимость консультаций</caption>
+            <thead>
+              <tr><th scope="col">Услуга</th><th scope="col">Длительность</th><th scope="col">Стоимость</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Первичная консультация<span class="price-table__sub">очно или онлайн</span></th>
+                <td data-label="Длительность"><span class="ph">00 мин</span></td>
+                <td data-label="Стоимость" class="price-table__price"><span class="ph">0 000 ₽</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Повторная консультация<span class="price-table__sub">очно или онлайн</span></th>
+                <td data-label="Длительность"><span class="ph">00 мин</span></td>
+                <td data-label="Стоимость" class="price-table__price"><span class="ph">0 000 ₽</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Психотерапевтическая сессия</th>
+                <td data-label="Длительность"><span class="ph">00 мин</span></td>
+                <td data-label="Стоимость" class="price-table__price"><span class="ph">0 000 ₽</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Онлайн-консультация</th>
+                <td data-label="Длительность"><span class="ph">00 мин</span></td>
+                <td data-label="Стоимость" class="price-table__price"><span class="ph">0 000 ₽</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="price-notes">
+            <li>Перенести или отменить встречу можно без оплаты, если предупредить не позднее чем за <span class="ph">24 часа</span>.</li>
+            <li>Медицинские услуги оказываются на основании договора. Документы для налогового вычета — <span class="ph">по запросу</span>.</li>
+            <li>Цены актуальны на <span class="ph">ДД.ММ.ГГГГ</span>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq">
+        <header class="section-head faq__head">
+          <p class="eyebrow"><span class="eyebrow__num">08</span>Вопросы</p>
+          <h2 class="section-title" id="faq-title">Частые <em>вопросы</em></h2>
+          <p class="section-intro">
+            Ответы носят общий характер и не заменяют консультацию. Если вашего вопроса нет — просто напишите.
+          </p>
+        </header>
+
+        <!-- PLACEHOLDER: ответы согласуйте с врачом; при необходимости добавьте вопросы по образцу <details>. -->
+        <div class="accordion">
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Как подготовиться к первой консультации?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Специальной подготовки не нужно. Если хочется, можно заранее записать, что беспокоит и как давно, какие лекарства вы принимаете
+                и какие обследования проходили. Возьмите с собой медицинские документы, если они есть, и паспорт — он нужен для оформления договора.</p>
+            </div>
+          </details>
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Можно ли обратиться, если диагноза ещё нет?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Да. Большинство людей приходят без диагноза — просто потому, что им тяжело или непонятно, что происходит.
+                Разобраться в этом — одна из задач консультации. Направление от другого врача не требуется.</p>
+            </div>
+          </details>
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Как проходит онлайн-приём?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Встреча проходит по видеосвязи (<span class="ph">платформа</span>). Перед началом найдите тихое место, где вас не услышат,
+                проверьте интернет и камеру. Ссылку вы получите заранее. Некоторые вопросы могут потребовать очной встречи — врач скажет об этом.</p>
+            </div>
+          </details>
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Что делать, если я не знаю, с чего начать разговор?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Это нормально и встречается очень часто. Можно начать с того, почему вы решили записаться именно сейчас,
+                или просто сказать, что сложно подобрать слова. Врач будет задавать вопросы и поможет выстроить разговор.</p>
+            </div>
+          </details>
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Обязательно ли будут назначены лекарства?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Нет. Решение о лекарственной терапии принимается только после оценки состояния и обсуждается с вами:
+                зачем она может быть нужна, какие есть альтернативы. Вы вправе задать любые вопросы и отказаться.</p>
+            </div>
+          </details>
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Как перенести или отменить встречу?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Напишите или позвоните тем же способом, которым записывались. Если предупредить не позднее чем за <span class="ph">24 часа</span>,
+                перенос и отмена бесплатны. <span class="ph">Условия при более поздней отмене.</span></p>
+            </div>
+          </details>
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Как организована конфиденциальность?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Сам факт обращения и всё, что вы рассказываете, — врачебная тайна (ст. 13 Федерального закона № 323-ФЗ).
+                Сведения не передаются работодателю, родственникам или третьим лицам без вашего согласия, кроме случаев, прямо предусмотренных законом.
+                Медицинская документация хранится с ограниченным доступом. На сайте нет форм для описания здоровья и сторонней аналитики.</p>
+            </div>
+          </details>
+          <details class="qa" data-reveal>
+            <summary class="qa__q">Не поставят ли меня «на учёт»?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__a">
+              <p>Добровольная консультация у частного врача сама по себе не означает какого-либо наблюдения или ограничений.
+                Действующий закон о психиатрической помощи не использует понятие «учёт»; диспансерное наблюдение устанавливается
+                только по определённым медицинским основаниям и в установленном законом порядке. Если этот вопрос вас тревожит,
+                задайте его на первой встрече — врач ответит подробно.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. ЗАПИСЬ НА КОНСУЛЬТАЦИЮ ============ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <header class="section-head contact__head">
+          <p class="eyebrow"><span class="eyebrow__num">09</span>Запись</p>
+          <h2 class="section-title" id="contact-title">Записаться <em>на консультацию</em></h2>
+          <p class="section-intro">
+            Напишите или позвоните — согласуем удобные дату, время и формат.
+            В первом сообщении не нужно описывать симптомы: достаточно имени и удобного времени.
+          </p>
+        </header>
+
+        <!-- PLACEHOLDER: реальные контакты. Удалите каналы, которые не используются. -->
+        <ul class="channels" role="list">
+          <li>
+            <a class="channel channel--primary" href="https://t.me/USERNAME" target="_blank" rel="noopener">
+              <span class="channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M21 4 3 11l6 2m12-9-4 16-8-7m12-9L9 13m0 0v6l3-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="channel__body">
+                <span class="channel__label">Telegram</span>
+                <span class="channel__value"><span class="ph">@username</span></span>
+              </span>
+              <span class="channel__arrow" aria-hidden="true">→</span>
+              <span class="visually-hidden">(откроется в новой вкладке)</span>
+            </a>
+          </li>
+          <li>
+            <a class="channel" href="https://wa.me/70000000000?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E." target="_blank" rel="noopener">
+              <span class="channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="channel__body">
+                <span class="channel__label">WhatsApp</span>
+                <span class="channel__value"><span class="ph">+7 (000) 000-00-00</span></span>
+              </span>
+              <span class="channel__arrow" aria-hidden="true">→</span>
+              <span class="visually-hidden">(откроется в новой вкладке)</span>
+            </a>
+          </li>
+          <li>
+            <a class="channel" href="tel:+70000000000">
+              <span class="channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="channel__body">
+                <span class="channel__label">Телефон</span>
+                <span class="channel__value"><span class="ph">+7 (000) 000-00-00</span></span>
+              </span>
+              <span class="channel__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="channel" href="mailto:hello@example.com?subject=%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E">
+              <span class="channel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="5" width="18" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              </span>
+              <span class="channel__body">
+                <span class="channel__label">Почта</span>
+                <span class="channel__value"><span class="ph">hello@example.com</span></span>
+              </span>
+              <span class="channel__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="contact__grid">
+          <div class="template" data-reveal>
+            <h3 class="h3">Не знаете, что написать?</h3>
+            <p class="template__hint">Можно скопировать этот текст и отправить в любой мессенджер:</p>
+            <blockquote class="template__text" id="msg-template">Здравствуйте! Меня зовут ___. Хочу записаться на первичную консультацию. Удобный формат: очно / онлайн. Удобное время: ___.</blockquote>
+            <button class="btn btn--ghost btn--sm" type="button" data-copy="#msg-template">
+              <span data-copy-label>Скопировать текст</span>
+            </button>
+            <p class="template__status" role="status" aria-live="polite" data-copy-status></p>
+          </div>
+
+          <div class="visit" data-reveal>
+            <h3 class="h3">Очный приём</h3>
+            <dl class="visit__list">
+              <div><dt>Адрес</dt><dd><span class="ph">Город, улица, дом, кабинет</span></dd></div>
+              <div><dt>Как добраться</dt><dd><span class="ph">Метро / ориентиры / парковка</span></dd></div>
+              <div><dt>Часы приёма</dt><dd><span class="ph">Пн–Пт 10:00–20:00, по предварительной записи</span></dd></div>
+              <div><dt>Ответ на сообщения</dt><dd><span class="ph">в течение рабочего дня</span></dd></div>
+            </dl>
+            <!-- PLACEHOLDER: ссылка на карту (без встраивания сторонних виджетов) -->
+            <a class="link-arrow" href="https://yandex.ru/maps/" target="_blank" rel="noopener">Открыть на карте <span aria-hidden="true">↗</span><span class="visually-hidden">(откроется в новой вкладке)</span></a>
+          </div>
+        </div>
+
+        <aside class="crisis" aria-labelledby="crisis-title">
+          <h3 class="crisis__title" id="crisis-title">Если нужна срочная помощь</h3>
+          <p>
+            Консультации проходят по предварительной записи, а сообщения читаются не круглосуточно.
+            Если вам или кому-то рядом угрожает опасность, звоните по единому номеру <a href="tel:112">112</a>
+            или в скорую помощь <a href="tel:103">103</a>.
+            <span class="ph">Региональный телефон доверия: 8 (000) 000-00-00</span>
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 11. КОНТАКТЫ И ПОДВАЛ ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__name"><span class="ph">Имя Отчество Фамилия</span></p>
+          <p class="footer__role">Врач-психиатр, психотерапевт</p>
+          <a class="btn btn--light btn--sm" href="#contact">Записаться</a>
+        </div>
+
+        <nav class="footer__col" aria-label="Разделы сайта">
+          <h2 class="footer__heading">Разделы</h2>
+          <ul>
+            <li><a href="#about">О специалисте</a></li>
+            <li><a href="#help">С чем обратиться</a></li>
+            <li><a href="#formats">Форматы</a></li>
+            <li><a href="#prices">Стоимость</a></li>
+            <li><a href="#faq">Вопросы</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2 class="footer__heading">Контакты</h2>
+          <ul>
+            <li><a href="tel:+70000000000"><span class="ph">+7 (000) 000-00-00</span></a></li>
+            <li><a href="mailto:hello@example.com"><span class="ph">hello@example.com</span></a></li>
+            <li><span class="ph">Город, улица, дом</span></li>
+            <li><span class="ph">Пн–Пт 10:00–20:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__heading">Документы</h2>
+          <ul>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+            <li><a href="consent.html">Согласие на обработку персональных данных</a></li>
+            <!-- PLACEHOLDER: при наличии — ссылки на прейскурант, правила оказания платных услуг, образец договора -->
+            <li><span class="ph">Правила оказания платных медицинских услуг</span></li>
+            <li><a href="https://roszdravnadzor.gov.ru/services/licenses" target="_blank" rel="noopener">Реестр лицензий Росздравнадзора<span class="visually-hidden"> (откроется в новой вкладке)</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PLACEHOLDER: юридические сведения. Не публикуйте без проверки юристом. -->
+      <details class="legal">
+        <summary class="legal__summary">Сведения об исполнителе медицинских услуг</summary>
+        <dl class="legal__list">
+          <div><dt>Исполнитель</dt><dd><span class="ph">ИП Фамилия Имя Отчество / ООО «Название»</span></dd></div>
+          <div><dt>ОГРН / ОГРНИП</dt><dd><span class="ph">000000000000000</span></dd></div>
+          <div><dt>ИНН</dt><dd><span class="ph">000000000000</span></dd></div>
+          <div><dt>Адрес осуществления деятельности</dt><dd><span class="ph">Индекс, город, улица, дом, помещение</span></dd></div>
+          <div><dt>Лицензия на медицинскую деятельность</dt><dd><span class="ph">№ Л041-00000-00/00000000 от ДД.ММ.ГГГГ, выдана: наименование органа</span></dd></div>
+          <div><dt>Контролирующие органы</dt><dd><span class="ph">Территориальный орган Росздравнадзора, Роспотребнадзора, региональный орган управления здравоохранением — адреса и телефоны</span></dd></div>
+        </dl>
+      </details>
+
+      <div class="footer__bottom">
+        <p class="footer__warning">Имеются противопоказания. Необходима консультация специалиста.</p>
+        <p>Информация на сайте носит ознакомительный характер и не является публичной офертой или медицинской рекомендацией.</p>
+        <p>© <span data-year>2026</span> <span class="ph">Имя Фамилия</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка записи на мобильных -->
+  <div class="mobile-cta" data-mobile-cta aria-hidden="true">
+    <a class="btn btn--primary btn--block" href="#contact" tabindex="-1">Записаться на консультацию</a>
+  </div>
+
+  <!-- Просмотр сканов документов -->
+  <dialog class="doc-dialog" data-doc-dialog aria-labelledby="doc-dialog-title">
+    <div class="doc-dialog__inner">
+      <div class="doc-dialog__bar">
+        <h2 class="doc-dialog__title" id="doc-dialog-title" data-doc-dialog-title>Документ</h2>
+        <button class="doc-dialog__close" type="button" data-doc-dialog-close aria-label="Закрыть">×</button>
+      </div>
+      <img class="doc-dialog__img" alt="" data-doc-dialog-img>
+    </div>
+  </dialog>
+</body>
+</html>
